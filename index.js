@@ -9,6 +9,10 @@ app.get('/', (req, res) => {
   res.send('Hello from Express!');
 });
 
+app.get('/dev-a', (req, res) => {
+  res.send('Hello from Developer A');
+});
+
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
 });
